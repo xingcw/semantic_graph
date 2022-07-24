@@ -9,8 +9,9 @@ def main():
     tab_printer(args)
     trainer = SGTrainer(args, False)
     trainer.model.eval()
-    pred, gt = trainer.eval_batch_pair([args.pair_file,])
-    print("Score:",pred[0])
+    print(trainer.model)
+    pred, gt = trainer.eval_batch_pair([args.pair_file, ])
+    print("Score:", pred[0])
 
 
 if __name__ == "__main__":

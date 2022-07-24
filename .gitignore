@@ -1,1 +1,9 @@
 *.idea
+
+SG_PR_DATA/
+
+__pycache__/
+
+eva/
+
+logs_k10/
